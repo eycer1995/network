@@ -1,6 +1,6 @@
 # This is my homelab
 
-[diagram](network/src/diagram.png)
+![diagram](network/src/diagram.png)
 
 My homelab is a playground that I use to test different technologies and study
 without worrying too much about making mistakes, because that's the best way to
