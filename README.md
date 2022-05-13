@@ -14,8 +14,7 @@ This diagram was made using [draw.io](draw.io)
 * Improve ansible skills
 
 ## Setup
----
-###### Raspberry Pi 4B+
+### Raspberry Pi 4B+
 Hardware specs:
 * Processor: ARM Cortex-A72 @ 1.50GHz
 * RAM: 4GiB
@@ -34,7 +33,7 @@ Services running (podman containers):
 * Sonarr
 * Jackett
 
-##### Raspberry Pi 3B+
+### Raspberry Pi 3B+
 Hardware specs:
 * Processor: ARM Cortex-A53 @ 1.40GHz
 * RAM: 1GiB
@@ -50,7 +49,7 @@ Services running (bare metal):
 * Pihole
 * Pivpn Wireguard
 
-##### Packard Bell
+### Packard Bell
 Hardware specs:
 * Processor: Pentium(R) Dual-Core CPU T4300  @ 2.10GHz
 * RAM: 4GiB (2x2GiB) DDR2
@@ -71,7 +70,7 @@ Services running (docker containers):
 * Nextcloud
 * Portainer
 
-##### Desktop Fedora
+### Desktop Fedora
 Hardware specs:
 * Processor: Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz
 * RAM: 12GiB DDR4 2400MHz
