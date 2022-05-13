@@ -1,6 +1,6 @@
 # This is my homelab
----
-[diagram](./src/diagram.png)
+
+[diagram](/src/diagram.png)
 
 My homelab is a playground that I use to test different technologies and study
 without worrying too much about making mistakes, because that's the best way to
@@ -9,11 +9,11 @@ learn, trial and error.
 This diagram was made using [draw.io](draw.io)
 
 #### Currently working on:
-* Improve my containerizaton knowledge
+* Improve my containerization knowledge
 * Migrating everything from docker to podman
 * Improve ansible skills
 
-#### Setup
+## Setup
 ---
 ###### Raspberry Pi 4B+
 Hardware specs:
@@ -47,8 +47,8 @@ Network configuration:
 * Hostname: rpi02
 
 Services running (bare metal):
-* Pihole - Port 80
-* Pivpn Wireguard - Port 51821
+* Pihole
+* Pivpn Wireguard
 
 ##### Packard Bell
 Hardware specs:
