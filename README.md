@@ -1,19 +1,20 @@
-# This is my homelab
+# My homelab
 
-![diagram](./src/diagram.png)
+![diagram](./diagram.png)
 
-My homelab is a playground that I use to test different technologies and study
+My homelab is the playground I use to test different technologies and study
 without worrying too much about making mistakes, because that's the best way to
 learn, trial and error.
 
 This diagram was made using [draw.io](draw.io)
 
-#### Currently working on:
-* Improve my containerization knowledge
-* Migrating everything from docker to podman
-* Improve ansible skills
+### Currently working on:
+* Setup pfSense firewall.
+* Learn and tinker with Proxmox LXC Containers.
+* Reduce deployment times.
+* Work on HA services.
 
-## Setup
+## Hosts
 ### Raspberry Pi 4B+
 Hardware specs:
 * Processor: ARM Cortex-A72 @ 1.50GHz
@@ -27,59 +28,45 @@ Network configuration:
 * IP address: 192.168.0.101
 * Hostname: rpi01
 
-Services running (podman containers):
+Services:
 * Jellyfin
 * Transmission
 * Sonarr
 * Jackett
+* Radarr
+* Syncthing
 
 ### Raspberry Pi 3B+
 Hardware specs:
 * Processor: ARM Cortex-A53 @ 1.40GHz
 * RAM: 1GiB
 * Disk 0: 32G SandDisk MicroSD
-* Network: eth0 not used, wlan0 IEEE 802.11 (11Mbit/s)
+* Network: eth0 100 Mbps
 * OS: Raspbian Lite 64 bit
 
 Network configuration:
-* IP address: 192.168.0.102
+* IP address: 192.168.0.98
 * Hostname: rpi02
 
-Services running (bare metal):
-* Pihole
-* Pivpn Wireguard
+Services:
+* Octoprint
+* Wireguard
 
-### Packard Bell
-Hardware specs:
-* Processor: Pentium(R) Dual-Core CPU T4300  @ 2.10GHz
-* RAM: 4GiB (2x2GiB) DDR2
-* Disk 0: 640GB HDD
-* Network: 100Mbit/s
-* OS: Debian 11 64 bit
-
-Network configuration:
-* IP address: 192.168.0.126
-* Hostname: bell
-
-Services running (docker containers):
-* Nginx Proxy Manager + mariadb
-* Up-time Kuma
-* Grafana + InfluxDB + Telegraf
-* Bookstack
-* Calibre-web
-* Nextcloud
-* Portainer
-
-### Desktop Fedora
+### Desktop Proxmox
 Hardware specs:
 * Processor: Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz
-* RAM: 12GiB DDR4 2400MHz
-* Disk 0: ATA Disk KINGSTON SA400S3 480GB SSD
-* Disk 1 (odin): ATA Disk ST1000DM010-2EP1 1TB HDD
+* RAM: 32GiB DDR4 2400MHz
+* Disk 0: 480GB SSD
+* RAID1: 2x4TB NAS HDD
 * Network: 1Gbit/s
-* OS: Fedora 35
+* OS: Proxmox VE
 
-Services running (Virutalbox):
-* Minecraft server
-* Centos vm for testing
-* Debian vm for testing
+Virtual Machines:
+debpod01: Gitea, mariadb, chatbot-ui, Dashy.
+cmkmon01: checkmk, uptime-kuma.
+hmsp01: jellyfin, jellyseerr, sonarr, radarr, bazarr, jackett, transmission.
+
+LXC:
+pihole
+nginx-pm
+
