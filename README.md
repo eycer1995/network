@@ -62,11 +62,11 @@ Hardware specs:
 * OS: Proxmox VE
 
 Virtual Machines:
-debpod01: Gitea, mariadb, chatbot-ui, Dashy.
-cmkmon01: checkmk, uptime-kuma.
-hmsp01: jellyfin, jellyseerr, sonarr, radarr, bazarr, jackett, transmission.
+* debpod01: Gitea, mariadb, chatbot-ui, Dashy.
+* cmkmon01: checkmk, uptime-kuma.
+* hmsp01: jellyfin, jellyseerr, sonarr, radarr, bazarr, jackett, transmission.
 
 LXC:
-pihole
-nginx-pm
+* pihole
+* nginx-pm
 
